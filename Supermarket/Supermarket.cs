@@ -81,6 +81,8 @@ namespace Supermarket
 
         private void UpdateChanges()
         {
+            ///listBox.DataSource needs a List...i could have used also productsDict.ToList() Method,
+            ///but this solution looks nicer
             List<string> productList = new List<string>();
             foreach (var item in productsDict)
             {
